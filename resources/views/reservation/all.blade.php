@@ -18,6 +18,9 @@
                 <th scope="col">Email</th>
                 <th scope="col">Phone</th>
                 <th scope="col">Date</th>
+                <th scope="col">Time</th>
+                <th scope="col">Status</th>
+                <th scope="col">Action</th>
             </tr>
         </thead>
         <tbody>
@@ -28,6 +31,20 @@
                     <td>{{ $reservation->email }}</td>
                     <td>{{ $reservation->phone }}</td>
                     <td>{{ $reservation->reservation_date }}</td>
+                    <td>{{ $reservation->reservation_time }}</td>
+                    <td>
+                        @if($reservation->status == 0)
+                            <span class="badge badge-warning">Pending</span>
+                        @elseif($reservation->status == 1)
+                            <span class="badge badge-success">Confirmed</span>
+                        @else
+                            <span class="badge badge-danger">Rejected</span>
+                        @endif
+                    </td>
+                    <td>
+                        <a href="/reservation/detail/{{$reservation->id}}" type="button" 
+                        class="btn btn-primary">Detail</a>
+                    </td>
                 </tr>
             @endforeach
         </tbody>

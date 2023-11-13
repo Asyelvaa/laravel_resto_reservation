@@ -14,4 +14,10 @@ class ReservationController extends Controller
             "reservations" => Reservation::all()
         ]);
     }
+    public function show($reservation) {
+        return view('reservation.detail', [
+            "title" => "Detail Reservation",
+            "reservation" => Reservation::find($reservation)
+        ]);
+    }
 }
