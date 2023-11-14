@@ -28,10 +28,13 @@
                 <!-- Add your navigation links here -->
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Reservations</a>
+                        <a class="nav-link" href="/reservation/all">Reservations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/menu/menu">Menu</a>
                     </li>
                     <!-- Add more navigation links as needed -->
                 </ul>

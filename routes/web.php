@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MenuController;
 use App\Http\Controllers\ReservationController;
 use Illuminate\Support\Facades\Route;
 
@@ -26,4 +27,8 @@ Route::get('/reservation/all',
 Route::get('/reservation/detail/{detail}', 
     [ReservationController::class, 
     'show']
+);
+Route::get('/menu/menu', 
+    [MenuController::class, 
+    'index']
 );
