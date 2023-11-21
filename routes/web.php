@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\ReservationController;
+use App\Http\Controllers\ReviewController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,5 +31,9 @@ Route::get('/reservation/detail/{detail}',
 );
 Route::get('/menu/menu', 
     [MenuController::class, 
+    'index']
+);
+Route::get('/review/review', 
+    [ReviewController::class, 
     'index']
 );
