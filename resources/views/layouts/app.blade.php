@@ -36,6 +36,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/menu/menu">Menu</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/review/review">Review</a>
+                    </li>
                     <!-- Add more navigation links as needed -->
                 </ul>
             </div>
